@@ -1,0 +1,17 @@
+<mat-card class="credit-card">
+    <mat-card-header>
+      <mat-card-title>Credit Card</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+      <div class="card-details">
+        <div class="card-number">**** **** **** 1234</div>
+        <div class="amount-spent">
+          <mat-spinner *ngIf="loading" diameter="30"></mat-spinner>
+          <div *ngIf="!loading">
+            Amount Spent: 30,000
+          </div>
+        </div>
+      </div>
+    </mat-card-content>
+  </mat-card>
+  
